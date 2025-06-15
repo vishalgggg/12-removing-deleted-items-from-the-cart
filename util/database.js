@@ -5,11 +5,11 @@ let _db;
 
 const mongoConnect = callback => {
   MongoClient.connect(
-    'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/shop?retryWrites=true'
+    'mongodb+srv://vsoftjob184:Gunjan99@clustermongo.5s7quas.mongodb.net/?retryWrites=true&w=majority&appName=Clustermongo'
   )
     .then(client => {
-      console.log('Connected!');
-      _db = client.db();
+      console.log('Connected! hai');
+      _db = client.db('shop');
       callback();
     })
     .catch(err => {
